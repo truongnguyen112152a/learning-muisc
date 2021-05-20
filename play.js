@@ -105,19 +105,21 @@ zoom.onchange = () => {
     api.render();
 };
 
-const layout = wrapper.querySelector(".at-controls .at-layout select");
-layout.onchange = () => {
-    switch (layout.value) {
-        case "horizontal":
-            api.settings.display.layoutMode = alphaTab.LayoutMode.Horizontal;
-            break;
-        case "page":
-            api.settings.display.layoutMode = alphaTab.LayoutMode.Page;
-            break;
-    }
-    api.updateSettings();
-    api.render();
-};
+api.settings.display.layoutMode = alphaTab.LayoutMode.Horizontal;
+
+// const layout = wrapper.querySelector(".at-controls .at-layout select");
+// layout.onchange = () => {
+//     switch (layout.value) {
+//         case "horizontal":
+//             api.settings.display.layoutMode = alphaTab.LayoutMode.Horizontal;
+//             break;
+//         case "page":
+//             api.settings.display.layoutMode = alphaTab.LayoutMode.Page;
+//             break;
+//     }
+//     api.updateSettings();
+//     api.render();
+// };
 
 // player loading indicator
 const playerIndicator = wrapper.querySelector(
