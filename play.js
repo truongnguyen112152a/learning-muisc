@@ -4,7 +4,7 @@ const main = wrapper.querySelector(".at-main");
 
 // initialize alphatab
 const settings = {
-    file: "/Happy-Birthday-To-You-easy.gp",
+    file: "./Happy-Birthday-To-You-easy.gp",
     player: {
         enablePlayer: true,
         soundFont: "https://cdn.jsdelivr.net/npm/@coderline/alphatab@latest/dist/soundfont/sonivox.sf2",
