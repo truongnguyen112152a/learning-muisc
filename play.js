@@ -188,7 +188,7 @@ api.playerPositionChanged.on((e) => {
         formatDuration(e.currentTime) + " / " + formatDuration(e.endTime);
 });
 let countLyric = 0
-let arrImg = ["./img/A3.png", "./img/B3.png", "./img/C4.png", "./img/D4.png", "./img/E4.png", "./img/F4.png", "./img/G3.png", "./img/G4.png"]
+let arrImg = ["./learning-muisc/img/A3.png", "./learning-muisc/img/B3.png", "./learning-muisc/img/C4.png", "./learning-muisc/img/D4.png", "./learning-muisc/img/E4.png", "./learning-muisc/img/F4.png", "./learning-muisc/img/G3.png", "./learning-muisc/img/G4.png"]
 api.playedBeatChanged.on((beat) => {
     if(countLyric === 1) {
         document.querySelector('.content').innerHTML = ""
